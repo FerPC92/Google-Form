@@ -1,0 +1,148 @@
+.violet{
+    height: 278px;
+    background: rgb(103, 58, 183);
+}
+
+.grey{
+    background: #e9e9eb;
+    height: 1360px;
+}
+
+.container-form{
+    border: none;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    margin-bottom: 30px;
+    background: white;
+    padding: 18px;
+    border-top: 7px solid rgb(174, 121, 255);
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* edit content */
+
+.title h1{
+    font-family: 'roboto';
+    font-size: 36px;
+    padding-left: 23px;
+    padding-top: 26px;
+    letter-spacing: 1px;
+}
+
+.title h6{
+    padding: 10px 0px 10px 22px;
+    color:rgba(255, 35, 35, 0.692);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.neoland{
+    padding: 16px 8px 16px 42px;
+    background: rgb(103, 58, 183);
+    width: 107%;
+    margin-left: -20px;
+}
+
+.neoland h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 5px;
+    color: white;
+    
+}
+
+.container{
+    padding-left: 0px !important;
+}
+
+.form-check{
+    padding-top: 5px ;
+    margin-bottom: 10px;
+}
+
+
+.form-check h4{
+    font-size: 22px;
+    color: black;
+    font-family: 'roboto';
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+
+.form-check-label{
+    font-family: 'roboto';
+    font-size: 18px;
+    line-height: 1.9;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 14px;
+    
+    
+}
+
+
+#bootcamp,
+#temario,
+#avance,
+#practica,
+#headTeacher,
+#supportTeacher{
+    background: #ede7f6 !important;
+    color: #ede7f6 !important;
+    width: 25px;
+    height: 25px;
+    filter:brightness(120%);
+}
+
+.testone,
+.testpractica{
+    display: inline-block !important;
+    margin-left: 35px;
+
+}
+
+.labeladv,
+.labelpractica{
+    margin-left: 21px;
+}
+
+.title-padd h4{
+    padding-top:15px;
+    padding-bottom: 20px; 
+}
+
+.send{
+    background: #1a73e8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    margin-left: 15px;
+    width: 100px
+;
+}
+
+.back{
+    color: black;
+    padding: 8px;
+    border-radius: 6px;
+    margin-left: 15px;
+    width: 100px;
+    background: white;
+    border:1px solid black;
+
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/*.ng-invalid{
+    border: 1px solid red;
+}*/

@@ -1,0 +1,99 @@
+<div class="violet"></div>
+<div class="grey"></div>
+<div class="container-form">
+
+  <div class="title">
+    <h1>Encuesta Semanal</h1>
+    <h6>*Obligatorio</h6>
+  </div>
+  <div class="neoland">
+    <h3>Neoland</h3>
+  </div>
+  <div class="container" *ngIf="flag">
+    <form action="">
+      <div class="form-check" *ngFor="let element of dataEncuesta | slice:0:1">
+        <h4>{{element.title}}</h4>
+      <div class="form-check" *ngFor="let item of element.answers" >
+          <input class="form-check-input" type="radio" name="bootcamp" id="bootcamp" value="{{item}}" 
+            required [ngModelOptions]="{standalone: true}" [(ngModel)]="bootcampAnswer">
+          <label class="form-check-label" for="bootcamp">
+            {{item}} 
+          </label>
+        </div>
+      </div>
+
+      <div class="form-check" *ngFor="let element of dataEncuesta | slice:1:2">
+          <h4>{{element.title}}</h4>
+        <div class="form-check" *ngFor="let item of element.answers" >
+            <input class="form-check-input" type="radio" name="temario" id="temario" value="{{item}}" 
+              required [ngModelOptions]="{standalone: true}" [(ngModel)]="temarioAnswer">
+            <label class="form-check-label" for="temario">
+              {{item}} 
+            </label>
+        </div>
+      </div>
+
+      <div class="form-check title-padd" *ngFor="let element of dataEncuesta | slice:2:3">
+          <h4>{{element.title}}</h4>
+        <div class="form-check testone" *ngFor="let item of element.answers" >
+            <input class="form-check-input" type="radio" name="avance" id="avance" value="{{item}}" 
+              required [ngModelOptions]="{standalone: true}" [(ngModel)]=" avanceAnswer">
+            <label class="form-check-label labeladv" for="avance">
+              {{item}} 
+            </label>
+        </div>
+      </div>
+
+      <div class="form-check title-padd" *ngFor="let element of dataEncuesta | slice:3:4">
+          <h4>{{element.title}}</h4>
+        <div class="form-check testpractica" *ngFor="let item of element.answers">
+            <input class="form-check-input" type="radio" name="practica" id="practica" value="{{item}}" 
+              required [ngModelOptions]="{standalone: true}" [(ngModel)]=" practiseAnswer">
+            <label class="form-check-label labelpractica" for="practica">
+              {{item}} 
+            </label>
+        </div>
+      </div>
+
+      <div class="form-check" *ngFor="let element of dataEncuesta | slice:4:5">
+          <h4>{{element.title}}</h4>
+        <div class="form-check" *ngFor="let item of element.answers">
+            <input class="form-check-input" type="radio" name="headTeacher" id="headTeacher" value="{{item}}" 
+              required [ngModelOptions]="{standalone: true}" [(ngModel)]=" headTeacherAnswer">
+            <label class="form-check-label" for="headTeacher">
+              {{item}} 
+            </label>
+        </div>
+      </div>
+
+      <div class="form-check" *ngFor="let element of dataEncuesta | slice:5:6">
+          <h4>{{element.title}}</h4>
+        <div class="form-check" *ngFor="let item of element.answers">
+            <input class="form-check-input" type="radio" name="supportTeacher" id="supportTeacher" value="{{item}}" 
+               [ngModelOptions]="{standalone: true}" [(ngModel)]=" supportTeacherAnswer">
+            <label class="form-check-label" for="supportTeacher">
+              {{item}} 
+            </label>
+        </div>
+      </div>
+      <div *ngIf="otherflag">
+        <h3>Esta encuesta ya la has respondido</h3>
+      </div>
+
+
+      <div class="buttons">
+        <button class="back">ATRÁS</button>
+        <button class="send" (click)="test()">ENVIAR</button>
+      </div>
+
+    </form>
+    
+
+  </div>
+
+  <!--end table-->
+</div>
+<!--end container-->
+
+
+
